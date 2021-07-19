@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+</head>
+<style>
+    #container {
+        display:grid;
+        grid-template-columns: repeat(3,25%);
+        justify-content:center;
+        gap: 10px;
+    }
+    #product_div{
+        display:grid;
+        grid-template-columns: repeat(3,25%);
+        justify-content:center;
+        grid-row-gap: 10px;
+        grid-column-gap: 180px;
+
+    }
+    .block{
+        font-family: 'Merriweather', serif;
+        font-size:20px;
+        width: 250px;
+        height:300px;
+        margin-top: 0px;
+        background-color:whitesmoke;
+        margin-left: 200px;
+        border: 1px solid black;
+        float: left;
+    }
+    .block img{
+        width:200px;
+        height:230px;
+        margin-left: 9px;
+        object-fit: cover;
+    }
+    .block button{
+        text-align:center;
+        margin-left:70px;
+        margin-top: 0px;
+    }
+    .block h4{
+        margin-top:0px;
+        text-align: center;
+    }
+    .block h5{
+       margin-top: 0px;
+        margin-bottom:0px;
+        text-align:center;
+    }
+    img:hover{
+        background-color: red;
+    }
+    #cart{
+        width:200px;
+        height:100px;
+        border:1px solid black;
+        float:right
+    }
+
+</style>
+
+<body>
+    <h1 style='float:left;'>Home</h1>
+    <a id='cart' onclick='cart()'><h2>Cart</h2>
+        <input id='total_price'>
+    </a>
+    <div></div>
+    <div id="container">
+    </div>
+
+</body>
+
+</html>
+
+<script src = 'product.js'></script>
